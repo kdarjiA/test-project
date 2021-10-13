@@ -10,3 +10,6 @@ This is a sample project to demonstrate coding ability in laravel.
 
 ### User can be able to login to the application with below credentials
 ``admin@example.com / password``
+
+### To run unit test run below command
+``vendor/bin/phpunit tests/Unit/FormValidation``
