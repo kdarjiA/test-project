@@ -14,6 +14,15 @@ class FileUploadController extends Controller
         $this->middleware('auth');
     }
 
+    public static function get_inst()
+    {
+        static $instance;
+        if (is_null($instance)) {
+            $instance = new self();
+        }
+        return $instance;
+    }
+
     /**
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
